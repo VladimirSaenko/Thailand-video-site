@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thailand-video-site</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/favicon.ico">
+</head>
+<body>
+    <div class="hero">
+        <video autoplay loop muted plays-inline id="backvideo">
+            <source src="video/production ID_4133023.mp4" type="video/mp4">
+        </video>
+        <div class="logo">
+            <img src="images/logo.png" alt="logo">
+        </div>
+        <div class="sidebar">
+            <div class="text-box">
+                <h1>GOLDEN RESORT</h1>
+                <H4>LUXURY LIVING</H4>
+                <div class="line"></div>
+            </div>
+        </div>
+        <div class="content">
+            <h1>Thailand</h1>
+            <p>Very beatiful tropical beaches</p>
+            <div class="btn" id="playbtn">
+                <img src="images/play.png" id="icon">
+                <h3 id="buttonText"></h3>
+            </div>
+        </div>
+    </div>
+    <script>
+        let backvideo = document.getElementById('backvideo');
+        let playbtn = document.getElementById('playbtn');
+        let icon = document.getElementById('icon');
+        let buttonText = document.getElementById('buttonText');
+
+        playbtn.onclick = function () {
+            backvideo.style.display = "block";
+            if(backvideo.paused) {
+                backvideo.play();
+                icon.src = "images/play.png";
+                buttonText.innerHTML = "Play";
+            }
+            else {
+                backvideo.pause();
+                icon.src = "images/pause.png";
+                buttonText.innerHTML = "Pause";
+            }
+        }
+    </script>
+</body>
+</html>
