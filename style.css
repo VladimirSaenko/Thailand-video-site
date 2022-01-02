@@ -141,7 +141,7 @@
     }
 }
 
-@media (max-width: 640px){
+@media (max-width: 640px) {
 * {
     user-select: none;
 }
@@ -175,7 +175,7 @@
     font-size: 30px;
     /* cursor: pointer; */
     background: rgba(26, 23, 23, 0.733);
-    }
+}
     
 #icon {
     position: relative;
