@@ -4,6 +4,7 @@
     padding: 0;
     user-select: none;
     box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
 }
 
 .hero {
@@ -87,8 +88,9 @@
 
 .content h1 {
     cursor: default;
+    z-index: 1;
     font-size: 100px;
-    text-shadow: black 10px 10px 1px;
+    text-shadow: black 5px 5px 1px;
     user-select: none;
 }
 
