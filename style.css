@@ -10,14 +10,11 @@
 .hero {
     height: 100vh;
     width: 100%;
-    background: white;
     position: relative;
     background-size: cover;
     background-position: center;
-    background: url(../images/background.png);
-    /* background-image: url(/images/background.png); */
-    /* background: url(/images/background.png) center cover; */
-    /* background: white; */
+    background: url(images/background.png);
+    /* background: #fff; */
 }
 
 .logo {
