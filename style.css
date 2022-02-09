@@ -178,7 +178,7 @@
     
 #icon {
     position: relative;
-    width: 50px;
+    width: 60px;
     margin: 0;
     padding: 0;
     right: 25px;
@@ -194,8 +194,9 @@
 
 @media (min-width: 300px) {
     .content h1 {
-        font-size: 80px;
-        left: 50px;
+        font-size: 100px;
+        left: 40px;
+        text-shadow: white 1px 1px 1px;
     }
 
     .btn {
@@ -216,7 +217,6 @@
     }
 
     .btn {
-        width: 275px;
         height: 105px;
         font-size: 15px;
     }
