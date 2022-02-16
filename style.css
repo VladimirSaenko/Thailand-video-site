@@ -87,8 +87,8 @@
     cursor: default;
     z-index: 1;
     font-size: 100px;
-    text-shadow: black 5px 5px 1px;
     user-select: none;
+    color: white;
 }
 
 .content p {
@@ -141,75 +141,50 @@
 }
 
 @media (max-width: 640px) {
-* {
-    user-select: none;
-}
-
-.content {
-     /* position: absolute; */
-    right: 50px;
-    top: 35%;
-    transform: translateY(-50%);
-}
-
-.content h1 {
-    color: black;
-    text-shadow: white 5px 4px 2px;
-    position: relative;
-    bottom: 0px;
-    font-size: 100px;
-}
-
-.content p {
-    visibility: hidden;
-}
-
-.btn {
-    position: relative;
-    top: 275px;
-    left: 17%;
-    width: 350px;
-    color: white;
-    border-radius: 350px;
-    font-size: 30px;
-    /* cursor: pointer; */
-    background: rgba(26, 23, 23, 0.733);
-}
-    
-#icon {
-    position: relative;
-    width: 60px;
-    margin: 0;
-    padding: 0;
-    right: 25px;
-}
-
-#backvideo {
-    display: flex;
-    height: 100vh;
-    width: 100vh;
-}
-
-}
-
-@media (min-width: 300px) {
     .content h1 {
-        font-size: 100px;
-        left: 40px;
-        text-shadow: white 1px 1px 1px;
+        display: none;
     }
 
-    .btn {
-        width: 325px;
-        left: 15%;
-        top: 235px;
-        font-size: 37px;
+    .content p {
+        visibility: hidden;
     }
+    .btn {
+        width: 350px;
+        color: white;
+        border-radius: 350px;
+        font-size: 30px;
+        background: rgba(26, 23, 23, 0.733);
+    }
+    
+    #icon {
+        position: relative;
+        width: 60px;
+        margin: 0;
+        padding: 0;
+        right: 25px;
+    }
+    
+    #backvideo {
+        display: flex;
+        height: 100vh;
+        width: 100vh;
+    }
+
 }
 
 @media screen and (min-width: 300px) and (max-width: 800px) {
     .logo, .logo img {
         width: 150px;
+    }
+
+    .content {
+        color: white;
+        position: absolute;
+        bottom: 100%;
+        z-index: 100;
+        left: 5%;
+        width: 100%;
+        transform: translateY(-50%);
     }
 
     .sidebar {
@@ -218,7 +193,6 @@
 
     .btn {
         height: 105px;
-        font-size: 15px;
     }
 
     #icon {
