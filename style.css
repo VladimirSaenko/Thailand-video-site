@@ -128,13 +128,6 @@
 
 @media (min-aspect-ratio: 16/9) {
     #backvideo {
-        width: auto;
-        height: 100%;
-    }
-}
-
-@media (min-aspect-ratio: 16/9) {
-    #backvideo {
         width: 100%;
         height: auto;
     }
@@ -148,6 +141,7 @@
     .content p {
         visibility: hidden;
     }
+    
     .btn {
         width: 350px;
         color: white;
