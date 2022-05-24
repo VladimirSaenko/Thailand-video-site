@@ -171,6 +171,14 @@
         width: 150px;
     }
 
+    body {
+        background: url(images/background.png);
+    }
+
+    .hero {
+        overflow: hidden;
+    }
+
     .content {
         color: white;
         position: absolute;
